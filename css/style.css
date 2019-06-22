@@ -1,18 +1,94 @@
+@charset "UTF-8";
+* {
+  font-family: "Amiko", "Helvetica", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
+
+.under-line {
+  border-bottom: solid 4px #FFCF09;
+  padding-bottom: 2px; }
+
+.about {
+  margin: 0 0 20px 0; }
+
 .top-view-wrap {
   position: relative; }
+  .top-view-wrap img {
+    border-style: none; }
   .top-view-wrap .logo {
     width: 65px;
     height: 34px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 8px;
+    left: 8px;
     z-index: 100; }
   .top-view-wrap .gif {
-    width: 100%; }
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    line-height: 0.1em; }
 
 .app-download {
   background-color: black;
   width: 100%;
-  height: 150px; }
+  height: auto;
+  text-align: center; }
+  .app-download h2 {
+    color: white;
+    padding: 2rem;
+    font-size: 14px; }
+  .app-download .app {
+    width: 162px;
+    height: 48px;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 2rem; }
+
+.three-contents-explain {
+  background-color: #FFF8E9;
+  text-align: center; }
+  .three-contents-explain h1 {
+    font-Size: 18px;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.3rem; }
+    .three-contents-explain h1 span {
+      border-bottom: solid 4px #FFCF09;
+      padding-bottom: 2px; }
+  .three-contents-explain p {
+    line-height: 1.75rem;
+    font-size: 14px;
+    padding-bottom: 3rem; }
+  .three-contents-explain .column-container .column {
+    background-color: #FFFFFF;
+    width: 94%;
+    height: auto;
+    margin: 0 auto 3% auto;
+    padding: 30px 10px;
+    border-bottom: solid 1px #e5e0d7; }
+    .three-contents-explain .column-container .column img {
+      width: 66px;
+      height: 66px; }
+    .three-contents-explain .column-container .column h2 {
+      font-size: 15px;
+      letter-spacing: 0.2rem;
+      line-height: 1.75rem;
+      padding: 2rem; }
+  .three-contents-explain p {
+    font-size: 13px; }
+  .three-contents-explain .column-note {
+    font-size: 11px;
+    width: 94%;
+    line-height: 1.6rem;
+    color: #8c9098;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 1.5rem; }
+
+.send-item {
+  background-color: #FFF8E9;
+  text-align: center;
+  padding-top: 1rem; }
 
 /*# sourceMappingURL=style.css.map */
