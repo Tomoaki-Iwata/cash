@@ -88,7 +88,19 @@
 
 .send-item {
   background-color: #FFF8E9;
-  text-align: center;
-  padding-top: 1rem; }
+  text-align: center; }
+  .send-item h1 {
+    font-size: 18px;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    letter-spacing: 0.2rem; }
+  .send-item p {
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+    line-height: 1.75rem; }
+  .send-item img {
+    width: 90%;
+    height: auto;
+    margin: 30px 10px 20px; }
 
 /*# sourceMappingURL=style.css.map */
