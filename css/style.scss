@@ -3,18 +3,27 @@ $main-color : #FFF8E9;
 * {
     font-family: "Amiko", "Helvetica", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
+
 .under-line {
     border-bottom: solid 4px #FFCF09;
     padding-bottom: 2px;
 }
+
 .about {
     margin: 0 0 20px 0;
 }
+
+.about-user {
+    margin: 0;
+}
+
 .top-view-wrap {
     position: relative;
-    img{
+
+    img {
         border-style: none;
     }
+
     .logo {
         width: 65px;
         height: 34px;
@@ -63,7 +72,7 @@ $main-color : #FFF8E9;
     text-align: center;
 
     h1 {
-        font-Size: 18px;
+        font-size: 18px;
 
         padding: {
             top: 3rem;
@@ -82,6 +91,7 @@ $main-color : #FFF8E9;
     p {
         line-height: 1.75rem;
         font-size: 14px;
+
         padding: {
             bottom: 3rem;
         }
@@ -95,31 +105,37 @@ $main-color : #FFF8E9;
             margin: 0 auto 3% auto;
             padding: 30px 10px;
             border-bottom: solid 1px #e5e0d7;
+
             img {
                 width: 66px;
                 height: 66px;
             }
+
             h2 {
                 font-size: 15px;
                 letter-spacing: 0.2rem;
                 line-height: 1.75rem;
                 padding: 2rem;
-                
+
             }
         }
     }
+
     p {
         font-size: 13px;
     }
+
     .column-note {
         font-size: 11px;
         width: 94%;
         line-height: 1.6rem;
         color: #8c9098;
+
         margin: {
             right: auto;
             left: auto;
         }
+
         padding: {
             bottom: 1.5rem;
         }
@@ -129,22 +145,170 @@ $main-color : #FFF8E9;
 .send-item {
     background-color: $main-color;
     text-align: center;
+
     h1 {
         font-size: 18px;
+
         padding: {
             top: 3rem;
             bottom: 1rem;
         }
+
         letter-spacing: 0.2rem;
+        line-height: 2rem;
     }
+
     p {
         font-size: 14px;
         letter-spacing: 0.1rem;
         line-height: 1.75rem;
     }
+
     img {
         width: 90%;
         height: auto;
         margin: 30px 10px 20px;
+    }
+}
+
+.many-items {
+    text-align: center;
+    background-color: $main-color;
+
+
+    h1 {
+        color: #FFCF09;
+        font-size: 24px;
+        font-family: 'Amiko';
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+
+        padding: {
+            top: 20px;
+        }
+    }
+
+    p {
+        font-size: 14px;
+        letter-spacing: 0.2rem;
+
+        padding: {
+            top: 20px;
+        }
+    }
+
+    .loop {
+        overflow: hidden;
+        display: flex;
+        position: relative;
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            img {
+                width: 110px;
+                height: 90px;
+                border-radius: 50%;
+                padding: 0 10px;
+
+                margin: {
+                    bottom: 10px;
+                }
+            }
+
+            .item-price {
+                display: inline;
+                background: #FFFFFF;
+                padding: 5px;
+            }
+        }
+
+    }
+
+}
+
+.user-voice {
+    text-align: center;
+    background-color: $main-color;
+    position: relative;
+
+    h1 {
+        color: #FFCF09;
+        font-size: 24px;
+        font-family: 'Amiko';
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+
+        padding: {
+            top: 20px;
+            bottom: 20px;
+        }
+    }
+
+    .users-voice {
+        display: inline-block;
+        list-style: none;
+
+        margin: {
+            bottom: 100px;
+        }
+
+        li {
+            position: relative;
+
+            width: 300px;
+
+            video {
+
+                height: 180px;
+            }
+
+            .statement {
+                font-size: 14px;
+                font-weight: bold;
+                letter-spacing: 0.16rem;
+                text-align: left;
+                background: #FFCF09;
+                padding: 1rem 1rem 2rem;
+            }
+
+            .identity {
+                font-size: 10px;
+                color: #808080;
+                background-color: #FFFFFF;
+                position: absolute;
+                bottom: -7px;
+                right: 20px;
+                padding: 3px;
+                border-radius: 3px;
+            }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+        display: inline-block;
+        position: absolute;
+        width: 180px;
+
+
+        margin: {
+            right: auto;
+            left: auto;
+        }
+
+        bottom: 0;
+
+
+        p {
+            border: 1px solid #000;
+            border-radius: 30px;
+            padding: 1rem;
+
+        }
+
     }
 }
