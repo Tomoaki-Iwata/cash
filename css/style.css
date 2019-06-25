@@ -17,6 +17,7 @@
   .top-view-wrap img {
     border-style: none; }
   .top-view-wrap .logo {
+    position: fixed;
     width: 65px;
     height: 34px;
     position: absolute;
@@ -183,12 +184,43 @@
     display: inline-block;
     position: absolute;
     width: 180px;
-    margin-right: auto;
-    margin-left: auto;
-    bottom: 0; }
-    .user-voice a p {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+    .user-voice a .more {
       border: 1px solid #000;
       border-radius: 30px;
       padding: 1rem; }
+
+footer {
+  position: relative; }
+  footer .media {
+    width: 100%;
+    height: auto;
+    padding: 30px; }
+  footer .options {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 80px; }
+    footer .options li {
+      display: inline;
+      white-space: nowrap; }
+      footer .options li a {
+        color: #000;
+        padding-right: 10px; }
+  footer .madeby {
+    display: inline-block;
+    position: absolute;
+    width: 65px;
+    height: 35px;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  footer .copyright {
+    font-size: 10px;
+    text-align: center;
+    margin: 20px 0; }
 
 /*# sourceMappingURL=style.css.map */

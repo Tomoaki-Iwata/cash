@@ -25,6 +25,7 @@ $main-color : #FFF8E9;
     }
 
     .logo {
+        position: fixed;
         width: 65px;
         height: 34px;
         position: absolute;
@@ -293,22 +294,66 @@ $main-color : #FFF8E9;
         display: inline-block;
         position: absolute;
         width: 180px;
-
-
-        margin: {
-            right: auto;
-            left: auto;
-        }
-
         bottom: 0;
+        left: 0;
+        right: 0;
 
+        margin: auto;
 
-        p {
+        .more {
             border: 1px solid #000;
             border-radius: 30px;
             padding: 1rem;
 
         }
 
+    }
+}
+
+footer {
+    position: relative;
+
+    .media {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .options {
+        list-style: none;
+        text-align: center;
+        margin: {
+            bottom: 80px;
+        }
+        li {
+            display: inline;
+            white-space: nowrap;
+
+            a {
+                color: #000;
+
+                padding: {
+                    right: 10px;
+                }
+            }
+
+        }
+    }
+
+    .madeby {
+            display: inline-block;
+            position: absolute;
+            width: 65px;
+            height: 35px;
+            bottom: 40px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    
+    .copyright {
+        font-size: 10px;
+        text-align: center;
+        margin: 20px 0;
     }
 }
