@@ -17,6 +17,13 @@ $main-color : #FFF8E9;
     margin: 0;
 }
 
+@media screen and (min-width: 900px) {
+    .responsive {
+        width: 90%;
+        margin: 50px auto 0;
+    }
+}
+
 .top-view-wrap {
     position: relative;
 
@@ -28,10 +35,19 @@ $main-color : #FFF8E9;
         position: fixed;
         width: 65px;
         height: 34px;
-        position: absolute;
         top: 8px;
         left: 8px;
         z-index: 100;
+    }
+
+    @media screen and (min-width:900px) {
+        .logo {
+            top: 15px;
+            left: 15px;
+            width: 180px;
+            height: 94px;
+        }
+
     }
 
     .gif {
@@ -68,12 +84,24 @@ $main-color : #FFF8E9;
     }
 }
 
+@media screen and (min-width: 900px) {
+    .app-download {
+        display: none;
+    }
+}
+
 .three-contents-explain {
     background-color: $main-color;
     text-align: center;
 
     h1 {
         font-size: 18px;
+        font-weight: bold;
+
+        @media screen and (min-width: 900px) {
+            font-size: 34px;
+            line-height: 3rem;
+        }
 
         padding: {
             top: 3rem;
@@ -93,14 +121,30 @@ $main-color : #FFF8E9;
         line-height: 1.75rem;
         font-size: 14px;
 
+        @media screen and (min-width: 900px) {
+            font-size: 24px; //なぜ適用されない？
+            font-weight: bold;
+
+        }
+
         padding: {
             bottom: 3rem;
         }
     }
 
     .column-container {
+        @media screen and (min-width:900px) {
+            display: flex;
+
+        }
+
         .column {
             background-color: #FFFFFF;
+
+            @media screen and (min-width: 900px) {
+                width: 31%;
+            }
+
             width: 94%;
             height: auto;
             margin: 0 auto 3% auto;
@@ -114,10 +158,9 @@ $main-color : #FFF8E9;
 
             h2 {
                 font-size: 15px;
-                letter-spacing: 0.2rem;
+                letter-spacing: 0.16px;
                 line-height: 1.75rem;
-                padding: 2rem;
-
+                padding: 3px
             }
         }
     }
@@ -150,6 +193,12 @@ $main-color : #FFF8E9;
     h1 {
         font-size: 18px;
 
+        @media screen and (min-width: 900px) {
+            font-size: 34px;
+            font-weight: bold;
+            line-height: 3.5rem;
+        }
+
         padding: {
             top: 3rem;
             bottom: 1rem;
@@ -161,6 +210,13 @@ $main-color : #FFF8E9;
 
     p {
         font-size: 14px;
+        @media screen and (min-width: 900px) {
+            font-size: 20px; 
+            font-weight: bold;
+            margin: {
+                top: 20px;
+            }
+        }
         letter-spacing: 0.1rem;
         line-height: 1.75rem;
     }
@@ -180,6 +236,9 @@ $main-color : #FFF8E9;
     h1 {
         color: #FFCF09;
         font-size: 24px;
+        @media screen and (min-width: 900px) {
+            font-size: 42px;
+        }
         font-family: 'Amiko';
         font-weight: bold;
         letter-spacing: 0.1rem;
@@ -191,6 +250,12 @@ $main-color : #FFF8E9;
 
     p {
         font-size: 14px;
+        @media screen and (min-width: 900px) {
+            font-size: 20px; 
+            font-weight: bold;
+            margin: 30px 0 30px;
+
+        }
         letter-spacing: 0.2rem;
 
         padding: {
@@ -237,6 +302,9 @@ $main-color : #FFF8E9;
     h1 {
         color: #FFCF09;
         font-size: 24px;
+        @media screen and (min-width: 900px) {
+            font-size: 42px;
+        }
         font-family: 'Amiko';
         font-weight: bold;
         letter-spacing: 0.1rem;
@@ -322,9 +390,11 @@ footer {
     .options {
         list-style: none;
         text-align: center;
+
         margin: {
             bottom: 80px;
         }
+
         li {
             display: inline;
             white-space: nowrap;
@@ -341,19 +411,46 @@ footer {
     }
 
     .madeby {
-            display: inline-block;
-            position: absolute;
-            width: 65px;
-            height: 35px;
-            bottom: 40px;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-    
+        display: inline-block;
+        position: absolute;
+        width: 65px;
+        height: 35px;
+        bottom: 40px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
     .copyright {
         font-size: 10px;
         text-align: center;
         margin: 20px 0;
+    }
+}
+
+.wide-only {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .wide-only {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: auto;
+        height: auto;
+        margin: 30px;
+
+        p {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+        }
     }
 }
